@@ -8,6 +8,7 @@
     <meta property="twitter:card" content="summary_large_image" />
 
     <style data-tag="reset-style-sheet">
+
       html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
     </style>
     <style data-tag="default-style-sheet">
@@ -53,6 +54,7 @@
       href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
     />
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap');
       @keyframes fade-in-left {
         0% {
           opacity: 0;
@@ -115,10 +117,12 @@
           <!--Navbar component-->
           <header class="navbar-container">
             <header data-thq="thq-navbar" class="navbar-navbar-interactive">
+              <!-- Updated Desktop Logo (inline style) -->
               <img
                 alt="Teacher Finder"
                 src="./50 star staffing logo.png"
                 class="navbar-image1"
+                style="width: 400px; height: auto;"  
               />
               <div data-thq="thq-navbar-nav" class="navbar-desktop-menu">
                 <nav class="navbar-links1">
@@ -145,38 +149,32 @@
                   </span>
                 </nav>
                 <div class="navbar-buttons1">
-                  <button
-                    class="navbar-action11 thq-button-animated thq-button-filled"
-                  >
+                  <button class="navbar-action11 thq-button-animated thq-button-filled">
                     <span class="thq-body-small"><a href="./quickapply.html">Quick Apply</a></span>
                   </button>
-                  <button
-                    class="navbar-action21 thq-button-animated thq-button-outline"
-                  >
+                <!-- <button class="navbar-action21 thq-button-animated thq-button-outline">
                     <span class="thq-body-small"><a href="/signinUp.html">Sign in/Sign Up</a></span>
-                  </button>
+                  </button> -->
                 </div>
               </div>
               <div data-thq="thq-burger-menu" class="navbar-burger-menu">
                 <svg viewBox="0 0 1024 1024" class="navbar-icon1">
-                  <path
-                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s-19.115 42.667 42.667 42.667z"
-                  ></path>
+                  <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s-19.115 42.667 42.667 42.667z"></path>
                 </svg>
               </div>
               <div data-thq="thq-mobile-menu" class="navbar-mobile-menu">
                 <div class="navbar-nav">
                   <div class="navbar-top">
+                    <!-- Updated Mobile Logo (inline style) -->
                     <img
                       alt="Teacher Finder"
                       src="./50 star staffing logo.png"
                       class="navbar-logo"
+                      style="width: 150px; height: auto;"  <!-- Increased size -->
                     />
                     <div data-thq="thq-close-menu" class="navbar-close-menu">
                       <svg viewBox="0 0 1024 1024" class="navbar-icon3">
-                        <path
-                          d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                        ></path>
+                        <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
                       </svg>
                     </div>
                   </div>
@@ -247,6 +245,7 @@
                 class="hero-row-container1 thq-animated-group-container-horizontal thq-mask-image-horizontal"
               >
                 <div class="thq-animated-group-horizontal">
+                  
                   <img
                     alt="Teacher with students in classroom"
                     src="https://assets.everspringpartners.com/dims4/default/aec9e2b/2147483647/strip/true/crop/952x500+318+0/resize/1200x630!/quality/90/?url=http%3A%2F%2Feverspring-brightspot.s3.us-east-1.amazonaws.com%2F42%2Fdb%2F65e033f24cd0ae55e37ba0e75f37%2Fku-soe-blog-2023-usaeducationvstheworld-headerimage.jpg"
@@ -1108,7 +1107,7 @@
                         
                         <div class="testimonial-container19">
                           <strong class="thq-body-large">
-                            <span>Sarah Lee</span>
+                            <span>Michael Williams</span>
                           </strong>
                           <span class="thq-body-small">
                             <span>Special Education Teacher
@@ -1134,7 +1133,7 @@
                         
                         <div class="testimonial-container19">
                           <strong class="thq-body-large">
-                            <span>Sarah Lee</span>
+                            <span>Jessica Anderson</span>
                           </strong>
                           <span class="thq-body-small">
                             <span>General Education Substitute Teacher
@@ -1160,7 +1159,7 @@
                       
                       <div class="testimonial-container19">
                         <strong class="thq-body-large">
-                          <span>Sarah Lee</span>
+                          <span>Samantha Jackson</span>
                         </strong>
                         <span class="thq-body-small">
                           <span>Credentialed SPED Teacher
@@ -1186,7 +1185,7 @@
                     
                     <div class="testimonial-container19">
                       <strong class="thq-body-large">
-                        <span>Sarah Lee</span>
+                        <span>Brittany Green</span>
                       </strong>
                       <span class="thq-body-small">
                         <span> Behavior Intervention Specialist
@@ -1253,88 +1252,67 @@
           </div>
       </section>
 
-        <contact-wrapper class="contact-wrapper" >
-          <!--Contact component-->
-          <div class="contact-contact20 thq-section-padding">
-            <div class="contact-max-width thq-section-max-width">
-              <div class="contact-section-title">
-                <span class="thq-body-small">
-                  <span>
-                    We are here to help you with any inquiries you may have.
-                  </span>
-                </span>
-                <div class="contact-content1">
-                  <h2 class="thq-heading-2"><span>Contact Us</span></h2>
-                  <p class="contact-text3 thq-body-large">
-                    <span>
-                      Have a question or need support? Reach out to us!
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div class="contact-row">
-                <div class="contact-content2">
-                  <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
-                    <path
-                      d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"
-                    ></path>
-                  </svg>
-                  <div class="contact-contact-info1">
-                    <div class="contact-content3">
-                      <h3 class="contact-text4 thq-heading-3">Email</h3>
-                      <p class="contact-text5 thq-body-large">
-                        <span>
-                          Feel free to drop us a message or give us a call.
-                        </span>
-                      </p>
-                    </div>
-                    <span class="contact-email thq-body-small">
-                      <span>info@teachconnect.com</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="contact-content4">
-                  <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
-                    <path
-                      d="M282 460q96 186 282 282l94-94q20-20 44-10 72 24 152 24 18 0 30 12t12 30v150q0 18-12 30t-30 12q-300 0-513-213t-213-513q0-18 12-30t30-12h150q18 0 30 12t12 30q0 80 24 152 8 26-10 44z"
-                    ></path>
-                  </svg>
-                  <div class="contact-contact-info2">
-                    <div class="contact-content5">
-                      <h3 class="contact-text6 thq-heading-3">Phone</h3>
-                      <p class="contact-text7 thq-body-large">
-                        <span>
-                          Our team will get back to you as soon as possible.
-                        </span>
-                      </p>
-                    </div>
-                    <span class="contact-phone thq-body-small">
-                      <span>+1-123-456-7890</span>
-                    </span>
-                  </div>
-                </div>
-                <div class="contact-content6">
-                  <svg viewBox="0 0 1024 1024" class="thq-icon-medium">
-                    <path
-                      d="M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 512c-106.040 0-192-85.96-192-192s85.96-192 192-192 192 85.96 192 192-85.96 192-192 192z"
-                    ></path>
-                  </svg>
-                  <div class="contact-contact-info3">
-                    <div class="contact-content7">
-                      <h3 class="contact-text8 thq-heading-3">Office</h3>
-                      <p class="contact-text9 thq-body-large">
-                        <span>Connect with us today!</span>
-                      </p>
-                    </div>
-                    <span class="contact-address thq-body-small">
-                      <span>Houston, TX 77069, USA</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <!-- <div style="max-width: 1200px; margin: 0 auto; padding: 60px 20px; text-align: center;">
+        <h2 style="font-size: 36px; font-weight: bold; color: #0a014f; margin-bottom: 20px;">Our Expert Team</h2>
+        <p style="font-size: 18px; line-height: 1.6; color: #222; max-width: 1000px; margin: 0 auto 30px;">
+          Every individual on our team is carefully vetted, highly qualified, and fully certified, bringing years of experience and expertise to their roles.
+          We emphasize a collaborative approach, working side-by-side with schools and certified educational professionals to enhance the learning experience
+          and foster a thriving educational environment.
+        </p>
+        <button style="background-color: #b9a5d3; color: #000; border: none; padding: 12px 24px; border-radius: 8px; font-size: 16px; cursor: pointer;">
+          Connect With Our Team
+        </button>
+      </div> -->
+      
+      <div style="max-width: 1200px; margin: 0 auto; padding: 60px 20px; text-align: center;">
+        <h2 style="font-size: 36px; font-weight: bold; color: #0a014f; margin-bottom: 10px;">Contact Us</h2>
+        <p style="font-size: 18px; color: #555; margin-bottom: 40px;">
+          We’re here to help with any inquiries or support you need.
+        </p>
+      
+        <!-- Contact Cards -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px;">
+      
+          <!-- Email -->
+          <div style="flex: 1 1 30%; background-color: #f7f7f7; border-radius: 12px; padding: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); min-width: 260px;">
+            <div style="font-size: 32px; margin-bottom: 10px;">📧</div>
+            <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">Email</h3>
+            <p style="font-size: 16px; color: #555;">Drop us a message anytime.</p>
+            <a href="mailto:info@teachconnect.com" style="color: #007bff; font-size: 16px;">info@teachconnect.com</a>
           </div>
-        </contact-wrapper>
+      
+          <!-- Phone -->
+          <div style="flex: 1 1 30%; background-color: #f7f7f7; border-radius: 12px; padding: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); min-width: 260px;">
+            <div style="font-size: 32px; margin-bottom: 10px;">📞</div>
+            <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">Phone</h3>
+            <p style="font-size: 16px; color: #555;">Call us for direct support.</p>
+            <a href="tel:+11234567890" style="color: #007bff; font-size: 16px;">+1-123-456-7890</a>
+          </div>
+      
+          <!-- Office -->
+          <div style="flex: 1 1 30%; background-color: #f7f7f7; border-radius: 12px; padding: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); min-width: 260px;">
+            <div style="font-size: 32px; margin-bottom: 10px;">📍</div>
+            <h3 style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">Office</h3>
+            <p style="font-size: 16px; color: #555;">Visit us or find us on the map below.</p>
+            <a href="https://maps.google.com/?q=Houston,+TX+77069,+USA" target="_blank" style="color: #007bff; font-size: 16px;">Houston, TX 77069, USA</a>
+          </div>
+      
+        </div>
+      
+        <!-- Google Map -->
+        <div style="margin-top: 40px;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55545.66750944593!2d-95.53560450479814!3d29.982126469298393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864738f45eb62799%3A0xe13248a5db2e4bd3!2sHouston%2C%20TX%2077069%2C%20USA!5e0!3m2!1sen!2sin!4v1714713092293!5m2!1sen!2sin"
+            width="100%"
+            height="400"
+            style="border:0; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+      
         <footer-wrapper class="footer-wrapper">
           <!--Footer component-->
           <footer class="footer-footer1 thq-section-padding">
