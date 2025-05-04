@@ -4,6 +4,7 @@
  
 .navbar-container {
   width: 100%;
+  height: 100px;
   display: flex;
   position: relative;
   justify-content: center;
@@ -2337,6 +2338,7 @@
 }
 
 .home-container {
+  background-color: #ADD8E6;
   width: 100%;
   display: flex;
   min-height: 100vh;
