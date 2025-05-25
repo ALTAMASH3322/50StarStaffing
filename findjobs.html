@@ -1,728 +1,716 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>50 Starts Staffing</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
+<head>
+    <meta charset="utf-8">
+    <title>Find Jobs - 50 Stars Staffing</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./50 star staffing logo.png">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Find Jobs, Job Search, Education Jobs, IT Jobs, Healthcare Jobs" name="keywords">
+    <meta content="Search and apply for the latest job openings in education, IT, and healthcare at 50 Stars Staffing." name="description">
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-theme-neutral-dark);
-        background: var(--dl-color-theme-neutral-light);
+    <link href="./50 star staffing logo.png" rel="icon">
 
-        fill: var(--dl-color-theme-neutral-dark);
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/animate.css@4.1.1/animate.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200;300;400;500;600;700;800&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
-    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
     <style>
-      @keyframes fade-in-left {
-        0% {
-          opacity: 0;
-          transform: translateX(-20px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateX(0);
-        }
+      .page-header {
+          background: var(--primary);
+      }
+      .page-header h3 {
+          font-family: 'Playfair Display', serif;
+      }
+
+      .job-filters {
+          background-color: #f8f9fa;
+          padding: 20px;
+          border-radius: 8px;
+          margin-bottom: 30px;
+      }
+      .job-card {
+          border: 1px solid #e0e0e0;
+          border-radius: 8px;
+          margin-bottom: 20px;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+          transition: box-shadow 0.3s ease;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+      }
+      .job-card:hover {
+          box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      }
+      .job-card-header {
+          background-color: #f8f9fa;
+          padding: 15px;
+          border-bottom: 1px solid #e0e0e0;
+          cursor: pointer;
+      }
+      .job-card-header h5 {
+          margin-bottom: 0.25rem;
+          font-family: 'Nunito', sans-serif;
+          font-weight: 600;
+      }
+      .job-card-header p {
+          font-size: 0.9rem;
+          color: #6c757d;
+          margin-bottom: 0;
+      }
+      .job-card-summary {
+          padding: 15px;
+          font-size: 0.9rem;
+          flex-grow: 1;
+      }
+      .job-card-details {
+          display: none;
+          padding: 20px;
+          border-top: 1px solid #e9ecef;
+          background-color: #fff;
+      }
+      .job-card-details h6 {
+          font-weight: bold;
+          margin-top: 15px;
+          margin-bottom: 5px;
+          color: var(--primary);
+      }
+      .job-card-details p, .job-card-details ul {
+          font-size: 0.95rem;
+          color: #495057;
+          margin-bottom: 10px;
+      }
+       .job-card-details ul {
+          padding-left: 20px;
+      }
+      .job-card-details .btn-apply {
+          margin-top: 15px;
+      }
+      .job-card .badge {
+          font-size: 0.8rem;
+          padding: 0.4em 0.7em;
+      }
+      .job-card .location-icon {
+          margin-right: 5px;
+          color: #6c757d;
+      }
+      .expand-icon {
+        float: right;
+        transition: transform 0.3s ease;
+      }
+      .job-card-header.expanded .expand-icon {
+        transform: rotate(180deg);
+      }
+      .no-jobs-message {
+        text-align: center;
+        padding: 40px;
+        font-size: 1.2rem;
+        color: #777;
+      }
+      .pagination-container {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .pagination-container .page-link {
+        color: var(--primary);
+        cursor: pointer;
+        margin: 0 3px;
+        padding: .5rem .75rem;
+        border: 1px solid #dee2e6;
+      }
+      .pagination-container .page-link.active {
+        background-color: var(--primary);
+        color: white;
+        border-color: var(--primary);
+      }
+      .pagination-container .page-link:hover:not(.disabled):not(.active) {
+        background-color: #e9ecef;
+      }
+      .pagination-container .page-link.disabled {
+        color: #6c757d;
+        pointer-events: none;
+        background-color: #fff;
+        border-color: #dee2e6;
       }
     </style>
-  </head>
-  <body>
-    <link rel="stylesheet" href="./style.css" />
-    <div>
-      <link href="./index.css" rel="stylesheet" />
+</head>
 
-      <div class="home-container">
-        <navbar-wrapper class="navbar-wrapper">
-          <!--Navbar component-->
-          <header class="navbar-container">
-            <header data-thq="thq-navbar" class="navbar-navbar-interactive">
-              <img
-                alt="Teacher Finder"
-                src="./50 star staffing logo.png"
-                class="navbar-image1"
-              />
-              <div data-thq="thq-navbar-nav" class="navbar-desktop-menu">
-                <nav class="navbar-links1">
-                  <span class="thq-link thq-body-small">
-                    <a href="./index.html">Home</a>
-                  </span>
-                  <span class="thq-link thq-body-small">
-                    <a href="./findjobs.html">Find Jobs</a>
-                  </span>
-                  <span class="thq-link thq-body-small">
-                    <a href="./jobcategories.html">Job Categories</a>
-                  </span>
-                  <span class="thq-link thq-body-small">
-                    <a href="./schoolDistricts.html">School/Districts</a>
-                  </span>
-                  <span class="thq-link thq-body-small">
-                    <a href="#about-section">About</a>
-                  </span>
-                  <span class="thq-link thq-body-small">
-                    <a href="#contact-wrapper">Contact Us</a>
-                  </span>
-                  <span class="thq-link thq-body-small">
-                    <span>Blog</span>
-                  </span>
-                </nav>
-                <div class="navbar-buttons1">
-                  <button
-                    class="navbar-action11 thq-button-animated thq-button-filled"
-                  >
-                    <span class="thq-body-small"><a href="./quickapply.html">Quick Apply</a></span>
-                  </button>
-                  <button
-                    class="navbar-action21 thq-button-animated thq-button-outline"
-                  >
-                    <span class="thq-body-small"><a href="/signinUp.html">Sign in/Sign Up</a></span>
-                  </button>
+<body>
+    <div class="container-fluid bg-light position-relative shadow">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+            <a href="index.html" class="navbar-brand">
+                <img
+                    alt="50 Stars Staffing Logo"
+                    src="./50 star staffing logo.png"
+                    class="navbar-image1"
+                    style="width: 300px; height: auto;"
+                  />
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav font-weight-bold mx-auto py-0">
+                    <a href="./index.html" class="nav-item nav-link">Home</a>
+                    <a href="./findjobs.html" class="nav-item nav-link active">Find Jobs</a>
+                    <a href="./jobcategories.html" class="nav-item nav-link">Job Categories</a>
+                    <a href="./schoolDistricts.html" class="nav-item nav-link">School/Districts</a>
+                    <a href="./about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                 </div>
-              </div>
-              <div data-thq="thq-burger-menu" class="navbar-burger-menu">
-                <svg viewBox="0 0 1024 1024" class="navbar-icon1">
-                  <path
-                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                  ></path>
-                </svg>
-              </div>
-              <div data-thq="thq-mobile-menu" class="navbar-mobile-menu">
-                <div class="navbar-nav">
-                  <div class="navbar-top">
-                    <img
-                      alt="Teacher Finder"
-                      src="./50 star staffing logo.png"
-                      class="navbar-logo"
-                    />
-                    <div data-thq="thq-close-menu" class="navbar-close-menu">
-                      <svg viewBox="0 0 1024 1024" class="navbar-icon3">
-                        <path
-                          d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <nav class="navbar-links2">
-                    <span class="thq-link thq-body-small">
-                      <span>Home</span>
-                    </span>
-                    <span class="thq-link thq-body-small">
-                      <span>Find Jobs</span>
-                    </span>
-                    <span class="thq-link thq-body-small">
-                      <span>Job Categories</span>
-                    </span>
-                    <span class="thq-link thq-body-small">
-                      <span>School/Districts</span>
-                    </span>
-                    <span class="thq-link thq-body-small">
-                      <span>About</span>
-                    </span>
-                  </nav>
-                </div>
-                <div class="navbar-buttons2">
-                  <button class="thq-button-filled">Login</button>
-                  <button class="thq-button-outline">Register</button>
-                </div>
-              </div>
-            </header>
-          </header>
-        </navbar-wrapper>
-
-
-        <pricing-wrapper class="pricing-wrapper">
-            <!--Pricing component-->
-            <div class="pricing-pricing23 thq-section-padding">
-              <div class="pricing-max-width thq-section-max-width">
-                <div class="pricing-section-title">
-                  <div class="pricing-content">
-                    <h2 class="pricing-text10 thq-heading-2">
-                      <span>Recent Job Listinig</span>
-                    </h2>
-                    <p class="pricing-text11 thq-body-large">
-                      <span>
-                        From Education to Technology, Healthcare to Creative Arts,
-                        Find Meaningful Opportunities.
-                      </span>
-                    </p>
-                  </div>
-                </div>
-                <!-- <div class="pricing-tabs">
-                  <button
-                    class="pricing-button1 thq-button-animated thq-button-outline"
-                  >
-                    <span class="thq-body-small">Monthly</span>
-                  </button>
-                  <button
-                    class="pricing-button2 thq-button-animated thq-button-filled"
-                  >
-                    <span class="thq-body-small">Yearly</span>
-                  </button>
-                </div> -->
-                <div class="pricing-container1">
-                  <div class="pricing-column1 thq-card">
-                    <div class="pricing-price10">
-                      <div class="pricing-price11">
-                        <p class="pricing-text14 thq-body-large">
-                          <span>
-                            School Psychologist position for Waltham, MA
-                          </span>
-                        </p>
-                        <h3 class="pricing-text15 thq-heading-3">
-                          <span>$50 - $55/hourly</span>
-                        </h3>
-                      </div>
-                      <div class="pricing-list1">
-                        <div class="pricing-list-item10">
-                          <svg viewBox="0 0 1024 1024" class="thq-icon-small">
-                            <path
-                              d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small">
-                            <span>School Psychologists (PSY)</span>
-                          </span>
-                        </div>
-                        <div class="pricing-list-item11">
-                          <svg viewBox="0 0 1024 1024" class="thq-icon-small">
-                            <path
-                              d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small"><span>Waltham</span></span>
-                        </div>
-                        <div class="pricing-list-item12">
-                          <svg viewBox="0 0 1024 1024" class="thq-icon-small">
-                            <path
-                              d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small">
-                            <span>2025-03-26</span>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <button
-                      class="pricing-button3 thq-button-animated thq-button-outline"
-                    >
-                      <span class="thq-body-small"><span>Apply Now</span></span>
-                    </button>
-                  </div>
-                  <div class="pricing-column2 thq-card">
-                    <div class="pricing-price12">
-                      <div class="pricing-price13">
-                        <p class="pricing-text20 thq-body-large">
-                          <span>
-                            Special Education Teacher Job For Walnut Creek, CA
-                          </span>
-                        </p>
-                        <h3 class="pricing-text21 thq-heading-3">
-                          <span>$50 - $55/hourly</span>
-                        </h3>
-                      </div>
-                      <div class="pricing-list2">
-                        <div class="pricing-list-item13">
-                          <svg viewBox="0 0 1024 1024" class="thq-icon-small">
-                            <path
-                              d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small">
-                            <span>Special Education Teachers (SPED)</span>
-                          </span>
-                        </div>
-                        <div class="pricing-list-item14">
-                          <svg viewBox="0 0 1024 1024" class="thq-icon-small">
-                            <path
-                              d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small">
-                            <span>Walnut Creek</span>
-                          </span>
-                        </div>
-                        <div class="pricing-list-item15">
-                          <svg viewBox="0 0 1024 1024" class="thq-icon-small">
-                            <path
-                              d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small">
-                            <span>2025-03-26</span>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <button
-                      class="pricing-button4 thq-button-animated thq-button-filled"
-                    >
-                      <span class="thq-body-small"><span>Apply Now</span></span>
-                    </button>
-                  </div>
-                  <div class="pricing-column3 thq-card">
-                    <div class="pricing-price14">
-                      <div class="pricing-price15">
-                        <p class="pricing-text26 thq-body-large">
-                          <fragment class="home-fragment">
-                            <span class="home-text1">
-                              <span>Special Education Teacher job for&nbsp;</span>
-                              <span>Harrisburg, PA</span>
-                            </span>
-                          </fragment>
-                        </p>
-                        <h3 class="pricing-text27 thq-heading-3">
-                          <span>$50 - $55/hourly</span>
-                        </h3>
-                      </div>
-                      <div class="pricing-list3">
-                        <div class="pricing-list-item16">
-                          <svg viewBox="0 0 1024 1024" class="thq-icon-small">
-                            <path
-                              d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small">
-                            <span>Special Education Teachers (SPED)</span>
-                          </span>
-                        </div>
-                        <div class="pricing-list-item17">
-                          <svg viewBox="0 0 1024 1024" class="thq-icon-small">
-                            <path
-                              d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small"><span>PA</span></span>
-                        </div>
-                        <div class="pricing-list-item18">
-                          <svg viewBox="0 0 1024 1024" class="thq-icon-small">
-                            <path
-                              d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small">
-                            <span>2025-03-25</span>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <button
-                      class="pricing-button5 thq-button-animated thq-button-filled"
-                    >
-                      <span class="thq-body-small"><span>Apply Now</span></span>
-                    </button>
-                  </div>
-                  
-                </div>
-                <div class="pricing-container2">
-                  <div class="pricing-column4 thq-card">
-                    <div class="pricing-price16">
-                      <div class="pricing-price17">
-                        <span class="pricing-text32 thq-body-large">
-                          <span>Paraprofessionals for Waltham, MA - Simi Valley</span>
-                        </span>
-                        <h3 class="pricing-text15 thq-heading-3">
-                          <span>$50 - $55/hourly</span>
-                        </h3>
-                      </div>
-                      <div class="pricing-list1">
-                        <div class="pricing-list-item10">
-                          <svg viewBox="0 0 1024 1024" class="thq-icon-small">
-                            <path
-                              d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small">
-                            <span>School Psychologists (PSY)</span>
-                          </span>
-                        </div>
-                        <div class="pricing-list-item11">
-                          <svg viewBox="0 0 1024 1024" class="thq-icon-small">
-                            <path
-                              d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small"><span>Waltham</span></span>
-                        </div>
-                        <div class="pricing-list-item12">
-                          <svg viewBox="0 0 1024 1024" class="thq-icon-small">
-                            <path
-                              d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small">
-                            <span>2025-03-26</span>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <button
-                      class="pricing-button3 thq-button-animated thq-button-outline"
-                    >
-                      <span class="thq-body-small"><span>Apply Now</span></span>
-                    </button>
-                  </div>
-                  <div class="pricing-column5 thq-card">
-                    <div class="pricing-price18">
-                      <div class="pricing-price17">
-                        <span class="pricing-text32 thq-body-large">
-                          <span>Paraprofessionals for Waltham, MA - Simi Valley</span>
-                        </span>
-                        <h3 class="pricing-text15 thq-heading-3">
-                          <span>$50 - $55/hourly</span>
-                        </h3>
-                      </div>
-                      <div class="pricing-list1">
-                        <div class="pricing-list-item10">
-                          <svg viewBox="0 0 1024 1024" class="thq-icon-small">
-                            <path
-                              d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small">
-                            <span>School Psychologists (PSY)</span>
-                          </span>
-                        </div>
-                        <div class="pricing-list-item11">
-                          <svg viewBox="0 0 1024 1024" class="thq-icon-small">
-                            <path
-                              d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small"><span>Waltham</span></span>
-                        </div>
-                        <div class="pricing-list-item12">
-                          <svg viewBox="0 0 1024 1024" class="thq-icon-small">
-                            <path
-                              d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small">
-                            <span>2025-03-26</span>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <button
-                      class="pricing-button3 thq-button-animated thq-button-outline"
-                    >
-                      <span class="thq-body-small"><span>Apply Now</span></span>
-                    </button>
-                  </div>
-                  <div class="pricing-column6 thq-card">
-                    <div class="pricing-price20">
-                      <div class="pricing-price17">
-                        <span class="pricing-text32 thq-body-large">
-                          <span>Paraprofessionals for Waltham, MA - Simi Valley</span>
-                        </span>
-                        <h3 class="pricing-text15 thq-heading-3">
-                          <span>$50 - $55/hourly</span>
-                        </h3>
-                      </div>
-                      <div class="pricing-list1">
-                        <div class="pricing-list-item10">
-                          <svg viewBox="0 0 1024 1024" class="thq-icon-small">
-                            <path
-                              d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small">
-                            <span>School Psychologists (PSY)</span>
-                          </span>
-                        </div>
-                        <div class="pricing-list-item11">
-                          <svg viewBox="0 0 1024 1024" class="thq-icon-small">
-                            <path
-                              d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small"><span>Waltham</span></span>
-                        </div>
-                        <div class="pricing-list-item12">
-                          <svg viewBox="0 0 1024 1024" class="thq-icon-small">
-                            <path
-                              d="M384 690l452-452 60 60-512 512-238-238 60-60z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small">
-                            <span>2025-03-26</span>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                    <button
-                      class="pricing-button3 thq-button-animated thq-button-outline"
-                    >
-                      <span class="thq-body-small"><span>Apply Now</span></span>
-                    </button>
-                  </div>
-                </div>
-                <button>
-                  <div class="pricing-button6 thq-button-animated thq-button-filled">
-                    <span class="thq-body-small">
-                      <span>See All Job Listings</span>
-                    </span>
-                  </div>
-                </button>
-              </div>
+                <a href="./quickapply.html" class="btn btn-primary px-4">Quick Apply</a>
             </div>
-          </pricing-wrapper>
+        </nav>
+    </div>
 
-        <footer-wrapper class="footer-wrapper">
-            <!--Footer component-->
-            <footer class="footer-footer1 thq-section-padding">
-              <div class="footer-max-width thq-section-max-width">
-                <div class="footer-content">
-                  <div class="footer-newsletter">
-                    <img
-                      alt="Teacher Finder Logo"
-                      src="./50 star staffing logo.png"
-                      class="footer-image1"
-                    />
-                    <span class="thq-body-small">
-                      Subscribe to our newsletter for the latest updates on new
-                      features and product releases.
-                    </span>
-                    <div class="footer-actions">
-                      <div class="footer-form">
-                        <div class="footer-container">
-                          <input
-                            type="email"
-                            placeholder="Enter your email"
-                            class="footer-text-input thq-input"
-                          />
-                        </div>
-                        <button class="thq-button-outline footer-button">
-                          <span class="thq-body-small">
-                            <span>Subscribe to Newsletter</span>
-                          </span>
-                        </button>
-                      </div>
-                      <span class="footer-content2 thq-body-small">
-                        <span>
-                          Connect with us on social media for updates and more.
-                        </span>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="footer-links">
-                    <div class="footer-column1">
-                      <strong class="thq-body-large footer-column1-title">
-                        <span>Teachers</span>
-                      </strong>
-                      <div class="footer-footer-links1">
-                        <a
-                          href="https://example.com"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          class="thq-body-small"
-                        >
-                          <span>Apply for a Teaching Job</span>
-                        </a>
-                        <a
-                          href="https://example.com"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          class="thq-body-small"
-                        >
-                          <span>Find a Teacher</span>
-                        </a>
-                        <a
-                          href="https://example.com"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          class="thq-body-small"
-                        >
-                          <span>Contact Us</span>
-                        </a>
-                        <a
-                          href="https://example.com"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          class="thq-body-small"
-                        >
-                          <span>About Us</span>
-                        </a>
-                        <a
-                          href="https://example.com"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          class="thq-body-small"
-                        >
-                          <span>FAQs</span>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="footer-column2">
-                      <strong class="thq-body-large footer-column2-title">
-                        <span>Students</span>
-                      </strong>
-                      <div class="footer-footer-links2">
-                        <a
-                          href="https://example.com"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          class="thq-body-small"
-                        >
-                          <span>Terms and Conditions</span>
-                        </a>
-                        <a
-                          href="https://example.com"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          class="thq-body-small"
-                        >
-                          <span>Privacy Policy</span>
-                        </a>
-                        <a
-                          href="https://example.com"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          class="thq-body-small"
-                        >
-                          <span>Cookie Policy</span>
-                        </a>
-                        <a
-                          href="https://example.com"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          class="thq-body-small"
-                        >
-                          <span>Social Media</span>
-                        </a>
-                        <a
-                          href="https://example.com"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          class="thq-body-small"
-                        >
-                          <span>Feedback</span>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="footer-column3">
-                      <strong class="thq-body-large footer-social-link1-title">
-                        <span>Connect with Us</span>
-                      </strong>
-                      <div class="footer-social-links">
-                        <div class="footer-link14">
-                          <svg
-                            viewBox="0 0 877.7142857142857 1024"
-                            class="thq-icon-small"
-                          >
-                            <path
-                              d="M713.143 73.143c90.857 0 164.571 73.714 164.571 164.571v548.571c0 90.857-73.714 164.571-164.571 164.571h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571c0-38.286 10.286-64 65.714-64l69.714-0.571v-118.286c-12-1.714-53.714-5.143-101.714-5.143-101.143 0-170.857 61.714-170.857 174.857v97.714h-114.286v132.571h114.286v340h-304c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small">Facebook</span>
-                        </div>
-                        <div class="footer-link15">
-                          <svg
-                            viewBox="0 0 877.7142857142857 1024"
-                            class="thq-icon-small"
-                          >
-                            <path
-                              d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small">Instagram</span>
-                        </div>
-                        <div class="footer-link16">
-                          <svg
-                            viewBox="0 0 950.8571428571428 1024"
-                            class="thq-icon-small"
-                          >
-                            <path
-                              d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small">X</span>
-                        </div>
-                        <div class="footer-link17">
-                          <svg
-                            viewBox="0 0 877.7142857142857 1024"
-                            class="thq-icon-small"
-                          >
-                            <path
-                              d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small">LinkedIn</span>
-                        </div>
-                        <div class="footer-link18">
-                          <svg viewBox="0 0 1024 1024" class="thq-icon-small">
-                            <path
-                              d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z"
-                            ></path>
-                          </svg>
-                          <span class="thq-body-small">Youtube</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="footer-credits">
-                  <div class="thq-divider-horizontal"></div>
-                  <div class="footer-row">
-                    <span class="thq-body-small">
-                      <span>
-                        Subscribe to our newsletter for the latest news and job
-                        postings.
-                      </span>
-                    </span>
-                    <div class="footer-footer-links3">
-                      <span class="thq-body-small"><span>/privacy</span></span>
-                      <span class="thq-body-small"><span>/terms</span></span>
-                      <span class="thq-body-small"><span>/cookies</span></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </footer>
-          </footer-wrapper>
+    <div class="container-fluid page-header mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+            <h3 class="display-3 font-weight-bold text-white">Find Your Next Opportunity</h3>
+            <div class="d-inline-flex text-white">
+                <p class="m-0"><a class="text-white" href="index.html">Home</a></p>
+                <p class="m-0 px-2">/</p>
+                <p class="m-0">Find Jobs</p>
+            </div>
         </div>
-      </div>
-      <script
-        data-section-id="navbar"
-        src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
-      ></script>
-    </body>
-  </html>
-  
+    </div>
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="section-title pr-5"><span class="pr-2">Career Opportunities</span></p>
+                <h1 class="mb-4">Explore Open Positions</h1>
+            </div>
+
+            <div class="job-filters">
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label for="categoryFilter">Filter by Category:</label>
+                        <select id="categoryFilter" class="form-control">
+                            <option value="all">All Categories</option>
+                            <option value="education">Education</option>
+                            <option value="it">IT (Information Technology)</option>
+                            <option value="healthcare">Healthcare</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="locationFilter">Filter by Location:</label>
+                        <input type="text" id="locationFilter" class="form-control" placeholder="e.g., Houston, Remote">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="keywordSearch">Keyword Search:</label>
+                        <input type="text" id="keywordSearch" class="form-control" placeholder="e.g., Nurse, Developer">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="dateSortFilter">Sort by Date:</label>
+                        <select id="dateSortFilter" class="form-control">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div id="jobListingsContainer" class="row">
+            </div>
+            <div id="noJobsMessage" class="no-jobs-message" style="display: none;">
+                No jobs found matching your criteria. Please try adjusting your filters.
+            </div>
+
+            <div id="paginationContainer" class="pagination-container">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <a href="index.html" class="navbar-brand">
+                        <img
+                            alt="50 Stars Staffing Logo"
+                            src="./50 star staffing logo.png"
+                            style="width: 100%; max-width:350px; height: auto; margin-bottom: 20px;"
+                        />
+                    </a>
+                    <p class="small">
+                        Subscribe to our newsletter for the latest updates on new
+                        features and product releases.
+                    </p>
+                    <form action="#" class="mt-3">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control border-0" placeholder="Enter your email">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="small mt-3">
+                        Connect with us on social media for updates and more.
+                    </p>
+                     <div class="d-flex justify-content-start mt-4">
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-5">
+                    <h3 class="text-primary mb-4">Professionals</h3>
+                    <div class="d-flex flex-column justify-content-start small">
+                        <a class="text-white mb-2" href="./quickapply.html"><i class="fa fa-angle-right mr-2"></i>Apply for a Job</a>
+                        <a class="text-white mb-2" href="./findjobs.html"><i class="fa fa-angle-right mr-2"></i>Browse Opportunities</a>
+                        <a class="text-white mb-2" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        <a class="text-white mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>FAQs</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h3 class="text-primary mb-4">Legal & Info</h3>
+                     <div class="d-flex flex-column justify-content-start small">
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms and Conditions</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Cookie Policy</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Social Media</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Feedback</a>
+                    </div>
+                </div>
+                 <div class="col-lg-3 col-md-6 mb-5">
+                    <h3 class="text-primary mb-4">Get In Touch</h3>
+                    <div class="d-flex mb-2">
+                        <h4 class="fa fa-map-marker-alt text-primary mt-1"></h4>
+                        <div class="pl-3 small">
+                            <h5 class="text-white">Address</h5>
+                            <p>5902 Bermuda Dunes Dr,<br>Houston TX, 77069</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <h4 class="fa fa-envelope text-primary mt-1"></h4>
+                        <div class="pl-3 small">
+                            <h5 class="text-white">Email</h5>
+                            <p>info@50starsstaffing.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <h4 class="fa fa-phone-alt text-primary mt-1"></h4>
+                        <div class="pl-3 small">
+                            <h5 class="text-white">Phone</h5>
+                            <p>+1-832-271-6498</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="border-top: 1px solid rgba(255, 255, 255, .1); padding-top: 30px;" class="mt-4">
+                <div class="row">
+                    <div class="col-md-8 text-center text-md-left mb-3 mb-md-0">
+                        <p class="m-0 text-white-50 small">
+                            © <a class="text-primary font-weight-bold" href="#">50 Stars Staffing</a>. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center text-md-right">
+                        <a class="text-white-50 small mr-3" href="#">/privacy</a>
+                        <a class="text-white-50 small mr-3" href="#">/terms</a>
+                        <a class="text-white-50 small" href="#">/cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            const allJobs = [
+                {
+                    id: 1, title: "Special Education Teacher (SPED) - Elementary", category: "education", location: "Houston, TX", type: "Full-time", postedDate: "2024-05-03",
+                    summary: "Dynamic SPED teacher for elementary students. Focus on inclusive practices and IEP development.",
+                    description: "Create a supportive learning environment for students with diverse needs. Develop and implement IEPs, collaborate with staff and parents.",
+                    responsibilities: ["Develop IEPs", "Differentiated instruction", "Behavior management", "Parent communication"],
+                    qualifications: ["Bachelor's in Special Education", "TX SPED Certification", "2+ years experience preferred"]
+                },
+                {
+                    id: 2, title: "High School Math Teacher", category: "education", location: "Dallas, TX", type: "Full-time", postedDate: "2024-05-02",
+                    summary: "Engaging Math Teacher for grades 9-12. Ability to teach Algebra, Geometry, and Pre-Calculus.",
+                    description: "Inspire students in mathematics, prepare engaging lesson plans, and assess student progress effectively.",
+                    responsibilities: ["Lesson planning", "Classroom instruction", "Student assessment", "Extracurricular involvement"],
+                    qualifications: ["Bachelor's in Mathematics or Education", "TX Teaching Certification (Mathematics 7-12)", "Strong classroom management"]
+                },
+                {
+                    id: 3, title: "School Counselor - Middle School", category: "education", location: "Austin, TX", type: "Full-time", postedDate: "2024-05-01",
+                    summary: "Supportive School Counselor to guide middle school students through academic, social, and emotional challenges.",
+                    description: "Provide individual and group counseling, develop guidance programs, and collaborate with teachers and families.",
+                    responsibilities: ["Individual/Group counseling", "Crisis intervention", "Academic advising", "Career guidance"],
+                    qualifications: ["Master's in School Counseling", "TX School Counselor Certification", "Experience with adolescents"]
+                },
+                {
+                    id: 4, title: "Speech-Language Pathologist (SLP) - School Based", category: "education", location: "San Antonio, TX", type: "Contract", postedDate: "2024-04-30",
+                    summary: "Contract SLP to provide therapy services to students with communication disorders in a school setting.",
+                    description: "Conduct assessments, develop treatment plans, and deliver direct therapy services. Part-time or full-time contract available.",
+                    responsibilities: ["Conduct speech/language assessments", "Develop and implement treatment plans", "Collaborate with IEP teams", "Maintain documentation"],
+                    qualifications: ["Master's in Speech-Language Pathology", "ASHA CCC-SLP", "TX SLP License"]
+                },
+                {
+                    id: 5, title: "Elementary School Teacher - 3rd Grade", category: "education", location: "Fort Worth, TX", type: "Full-time", postedDate: "2024-04-29",
+                    summary: "Passionate 3rd Grade Teacher to create a nurturing and stimulating learning environment.",
+                    description: "Develop and deliver engaging lessons across all core subjects for third-grade students.",
+                    responsibilities: ["Curriculum development", "Instructional delivery", "Classroom management", "Student assessment"],
+                    qualifications: ["Bachelor's in Elementary Education", "TX EC-6 Generalist Certification", "Previous elementary experience"]
+                },
+                {
+                    id: 6, title: "School Librarian/Media Specialist", category: "education", location: "El Paso, TX", type: "Full-time", postedDate: "2024-04-28",
+                    summary: "Innovative School Librarian to manage library resources and promote literacy and research skills.",
+                    description: "Oversee library operations, curate collections, teach information literacy, and collaborate with teachers.",
+                    responsibilities: ["Library management", "Collection development", "Information literacy instruction", "Technology integration"],
+                    qualifications: ["Master's in Library Science (MLS/MLIS)", "TX School Librarian Certification", "Experience with library automation systems"]
+                },
+                {
+                    id: 7, title: "Bilingual Elementary Teacher (Spanish)", category: "education", location: "Houston, TX", type: "Full-time", postedDate: "2024-04-27",
+                    summary: "Seeking a fluent Spanish-speaking Bilingual Teacher for an elementary dual-language program.",
+                    description: "Provide instruction in both English and Spanish, fostering bilingualism and biliteracy.",
+                    responsibilities: ["Dual-language instruction", "Culturally responsive teaching", "Language assessment", "Parent engagement"],
+                    qualifications: ["Bachelor's Degree", "TX Bilingual Education Supplemental Certification", "Fluent in Spanish and English"]
+                },
+                {
+                    id: 8, title: "Educational Diagnostician", category: "education", location: "Remote (Texas)", type: "Full-time", postedDate: "2024-04-26",
+                    summary: "Experienced Educational Diagnostician to conduct assessments and support special education services, primarily remote.",
+                    description: "Administer and interpret psycho-educational assessments, write comprehensive reports, and participate in ARD/IEP meetings.",
+                    responsibilities: ["Psycho-educational assessments", "Report writing", "ARD/IEP meeting participation", "Consultation with staff"],
+                    qualifications: ["Master's Degree", "TX Educational Diagnostician Certification", "Experience with remote assessment tools"]
+                },
+                {
+                    id: 9, title: "Paraprofessional / Teacher's Aide", category: "education", location: "Austin, TX", type: "Part-time", postedDate: "2024-04-25",
+                    summary: "Supportive Paraprofessional to assist teachers in classroom management and instructional support.",
+                    description: "Work closely with students, individually or in small groups, under the direction of a certified teacher.",
+                    responsibilities: ["Assist with instruction", "Support classroom management", "Supervise students", "Prepare materials"],
+                    qualifications: ["High School Diploma or equivalent", "Experience working with children preferred", "Ability to follow directions"]
+                },
+                {
+                    id: 10, title: "Online ESL Teacher", category: "education", location: "Remote", type: "Contract", postedDate: "2024-04-24",
+                    summary: "Teach English as a Second Language to students online. Flexible hours, work from anywhere.",
+                    description: "Deliver engaging online English lessons to students of various ages and proficiency levels.",
+                    responsibilities: ["Deliver online lessons", "Assess student progress", "Provide feedback", "Utilize online teaching platforms"],
+                    qualifications: ["Bachelor's Degree", "TESOL/TEFL Certification", "Experience in online teaching a plus", "Reliable internet connection"]
+                },
+                {
+                    id: 11, title: "Senior Software Engineer (Java)", category: "it", location: "Dallas, TX", type: "Full-time", postedDate: "2024-05-03",
+                    summary: "Lead the design and development of scalable Java-based enterprise applications.",
+                    description: "Seeking an experienced Java engineer to mentor junior developers, contribute to architectural decisions, and write high-quality code.",
+                    responsibilities: ["Application design & development", "Code reviews", "Mentorship", "Performance optimization"],
+                    qualifications: ["Bachelor's in CS or related", "5+ years Java experience", "Spring Boot, Microservices", "Cloud platforms (AWS/Azure)"]
+                },
+                {
+                    id: 12, title: "Cybersecurity Analyst", category: "it", location: "Remote", type: "Full-time", postedDate: "2024-05-02",
+                    summary: "Monitor security events, investigate threats, and implement security measures to protect company assets.",
+                    description: "Join our security team to identify vulnerabilities, respond to incidents, and contribute to security policies.",
+                    responsibilities: ["Security monitoring (SIEM)", "Incident response", "Vulnerability assessment", "Security reporting"],
+                    qualifications: ["Bachelor's in Cybersecurity or IT", "Certifications like CISSP, CEH a plus", "Knowledge of security frameworks"]
+                },
+                {
+                    id: 13, title: "Data Scientist", category: "it", location: "Austin, TX", type: "Full-time", postedDate: "2024-05-01",
+                    summary: "Extract insights from complex datasets using machine learning, statistical modeling, and data visualization.",
+                    description: "Develop predictive models, perform data analysis, and communicate findings to stakeholders.",
+                    responsibilities: ["Data mining & analysis", "Machine learning model development", "Data visualization (Tableau/PowerBI)", "Algorithm design"],
+                    qualifications: ["Master's or PhD in Data Science, CS, Statistics", "Proficiency in Python/R", "Experience with ML libraries"]
+                },
+                {
+                    id: 14, title: "Network Engineer", category: "it", location: "Houston, TX", type: "Full-time", postedDate: "2024-04-30",
+                    summary: "Design, implement, and maintain robust and secure network infrastructure.",
+                    description: "Responsible for LAN/WAN, firewalls, routers, switches, and network performance monitoring.",
+                    responsibilities: ["Network design & implementation", "Troubleshooting network issues", "Security configuration", "Documentation"],
+                    qualifications: ["Bachelor's in IT or Networking", "CCNA/CCNP certification preferred", "Experience with Cisco, Juniper hardware"]
+                },
+                {
+                    id: 15, title: "React Native Mobile Developer", category: "it", location: "Remote", type: "Contract", postedDate: "2024-04-29",
+                    summary: "Develop cross-platform mobile applications using React Native for iOS and Android.",
+                    description: "Build intuitive and high-performance mobile apps, collaborate with UI/UX designers and backend teams.",
+                    responsibilities: ["Mobile app development (React Native)", "API integration", "Code optimization", "App store deployment"],
+                    qualifications: ["Proven React Native experience", "Strong JavaScript skills", "Familiarity with native build tools (Xcode, Android Studio)"]
+                },
+                {
+                    id: 16, title: "DevOps Engineer", category: "it", location: "Dallas, TX", type: "Full-time", postedDate: "2024-04-28",
+                    summary: "Automate and streamline software development and infrastructure management processes.",
+                    description: "Implement CI/CD pipelines, manage cloud infrastructure (AWS/Azure/GCP), and utilize containerization technologies (Docker, Kubernetes).",
+                    responsibilities: ["CI/CD pipeline management", "Infrastructure as Code (Terraform/CloudFormation)", "Container orchestration", "Monitoring and alerting"],
+                    qualifications: ["Experience as a DevOps Engineer", "Scripting (Python/Bash)", "Cloud platform expertise", "CI/CD tools (Jenkins, GitLab CI)"]
+                },
+                {
+                    id: 17, title: "IT Support Specialist - Tier 2", category: "it", location: "San Antonio, TX", type: "Full-time", postedDate: "2024-04-27",
+                    summary: "Provide advanced technical support to end-users for hardware, software, and network issues.",
+                    description: "Troubleshoot complex IT problems, manage user accounts, and assist with IT projects.",
+                    responsibilities: ["Resolve escalated support tickets", "Hardware/Software troubleshooting", "Active Directory management", "User training"],
+                    qualifications: ["Associate's or Bachelor's in IT", "CompTIA A+/Network+ a plus", "Strong problem-solving skills"]
+                },
+                {
+                    id: 18, title: "Salesforce Administrator", category: "it", location: "Remote", type: "Full-time", postedDate: "2024-04-26",
+                    summary: "Manage and customize Salesforce CRM to support sales, service, and marketing operations.",
+                    description: "Configure Salesforce, create reports and dashboards, manage users, and implement new features.",
+                    responsibilities: ["Salesforce configuration & customization", "User support & training", "Data management", "Workflow automation"],
+                    qualifications: ["Salesforce Administrator Certification (ADM 201)", "Experience with Sales Cloud/Service Cloud", "Apex/Visualforce knowledge a plus"]
+                },
+                {
+                    id: 19, title: "UI/UX Designer", category: "it", location: "Austin, TX", type: "Contract", postedDate: "2024-04-25",
+                    summary: "Create intuitive and visually appealing user interfaces and user experiences for web and mobile applications.",
+                    description: "Conduct user research, create wireframes, prototypes, and high-fidelity mockups.",
+                    responsibilities: ["User research & persona development", "Wireframing & prototyping (Figma/Sketch/Adobe XD)", "Visual design", "Usability testing"],
+                    qualifications: ["Proven UI/UX design experience", "Strong portfolio", "Proficiency in design tools", "Understanding of user-centered design"]
+                },
+                {
+                    id: 20, title: "Cloud Solutions Architect", category: "it", location: "Remote", type: "Full-time", postedDate: "2024-04-24",
+                    summary: "Design and implement scalable, secure, and cost-effective cloud solutions on AWS, Azure, or GCP.",
+                    description: "Work with clients to understand their needs and architect robust cloud-native applications and infrastructure.",
+                    responsibilities: ["Cloud architecture design", "Migration strategy", "Cost optimization", "Security best practices implementation"],
+                    qualifications: ["Extensive experience with a major cloud platform", "Cloud architect certification (AWS Certified Solutions Architect, etc.)", "Strong understanding of IaaS, PaaS, SaaS"]
+                },
+                {
+                    id: 21, title: "Registered Nurse (RN) - ICU", category: "healthcare", location: "Houston, TX", type: "Full-time", postedDate: "2024-05-03",
+                    summary: "Experienced ICU RN to provide critical care to patients in a fast-paced intensive care unit.",
+                    description: "Monitor critically ill patients, administer complex treatments, and collaborate with a specialized medical team.",
+                    responsibilities: ["Critical patient monitoring", "Advanced life support", "Ventilator management", "Family communication"],
+                    qualifications: ["Valid TX RN License", "CCRN certification preferred", "2+ years ICU experience", "ACLS/BLS certifications"]
+                },
+                {
+                    id: 22, title: "Medical Assistant (MA) - Family Practice", category: "healthcare", location: "Dallas, TX", type: "Full-time", postedDate: "2024-05-02",
+                    summary: "Certified Medical Assistant for a busy family practice. Assist physicians with patient care and administrative tasks.",
+                    description: "Room patients, take vital signs, assist with minor procedures, and manage patient records.",
+                    responsibilities: ["Patient intake & vitals", "Assisting with procedures", "EKG & phlebotomy", "EMR documentation"],
+                    qualifications: ["Medical Assistant Certification (CMA/RMA)", "CPR certification", "Experience in a clinic setting"]
+                },
+                {
+                    id: 23, title: "Occupational Therapist (OT) - Pediatrics", category: "healthcare", location: "Austin, TX", type: "Part-time", postedDate: "2024-05-01",
+                    summary: "Pediatric OT to provide therapy services to children with developmental delays and sensory processing disorders.",
+                    description: "Develop and implement treatment plans to improve fine motor skills, daily living activities, and sensory integration.",
+                    responsibilities: ["Pediatric assessments", "Individualized therapy sessions", "Parent education & training", "Collaboration with other therapists"],
+                    qualifications: ["Master's in Occupational Therapy", "Valid TX OT License", "Experience with pediatric population"]
+                },
+                {
+                    id: 24, title: "Licensed Practical Nurse (LPN) - Skilled Nursing Facility", category: "healthcare", location: "San Antonio, TX", type: "Full-time", postedDate: "2024-04-30",
+                    summary: "LPN to provide direct nursing care to residents in a skilled nursing and rehabilitation center.",
+                    description: "Administer medications, monitor resident conditions, and assist with daily care needs under the supervision of an RN.",
+                    responsibilities: ["Medication administration", "Resident assessments", "Wound care", "Assisting with ADLs"],
+                    qualifications: ["Valid TX LPN License", "Experience in long-term care preferred", "Compassionate and patient-focused"]
+                },
+                {
+                    id: 25, title: "Pharmacy Technician", category: "healthcare", location: "Fort Worth, TX", type: "Full-time", postedDate: "2024-04-29",
+                    summary: "Certified Pharmacy Technician to assist pharmacists in dispensing medications and managing pharmacy operations.",
+                    description: "Prepare prescriptions, manage inventory, provide customer service, and maintain pharmacy records.",
+                    responsibilities: ["Prescription filling", "Inventory management", "Customer service", "Insurance processing"],
+                    qualifications: ["Pharmacy Technician Certification (CPhT)", "TX State Registration", "Retail pharmacy experience a plus"]
+                },
+                {
+                    id: 26, title: "Radiologic Technologist (X-Ray Tech)", category: "healthcare", location: "El Paso, TX", type: "Full-time", postedDate: "2024-04-28",
+                    summary: "Perform diagnostic imaging procedures using X-ray equipment in a hospital or clinic setting.",
+                    description: "Position patients, operate imaging equipment, and ensure image quality for accurate diagnosis.",
+                    responsibilities: ["Perform X-ray examinations", "Patient positioning", "Equipment operation & maintenance", "Image processing"],
+                    qualifications: ["ARRT (R) certification", "Texas Medical Board License (MRT)", "Associate's degree in Radiologic Technology"]
+                },
+                {
+                    id: 27, title: "Home Health Aide (HHA)", category: "healthcare", location: "Houston, TX", type: "Part-time/Contract", postedDate: "2024-04-27",
+                    summary: "Compassionate Home Health Aide to provide personal care and support to clients in their homes.",
+                    description: "Assist clients with daily living activities, light housekeeping, and companionship. Flexible scheduling.",
+                    responsibilities: ["Personal care assistance", "Medication reminders", "Meal preparation", "Light housekeeping"],
+                    qualifications: ["HHA Certification preferred or relevant experience", "Valid driver's license and reliable transportation", "Caring and dependable"]
+                },
+                {
+                    id: 28, title: "Dental Hygienist", category: "healthcare", location: "Austin, TX", type: "Full-time", postedDate: "2024-04-26",
+                    summary: "Registered Dental Hygienist to provide preventative dental care and patient education.",
+                    description: "Perform dental cleanings, take X-rays, apply fluoride treatments, and educate patients on oral hygiene.",
+                    responsibilities: ["Dental prophylaxis", "Oral cancer screenings", "Patient education", "Taking dental radiographs"],
+                    qualifications: ["Associate's or Bachelor's in Dental Hygiene", "Valid TX RDH License", "CPR Certification"]
+                },
+                {
+                    id: 29, title: "Clinical Research Coordinator", category: "healthcare", location: "Dallas, TX", type: "Full-time", postedDate: "2024-04-25",
+                    summary: "Manage and coordinate clinical research studies, ensuring compliance with protocols and regulatory requirements.",
+                    description: "Oversee patient recruitment, data collection, study documentation, and communication with sponsors and IRBs.",
+                    responsibilities: ["Patient recruitment & screening", "Data collection & management", "Regulatory compliance", "Study coordination"],
+                    qualifications: ["Bachelor's degree in a health-related field", "ACRP or SoCRA certification a plus", "Experience in clinical research"]
+                },
+                {
+                    id: 30, title: "Medical Biller and Coder", category: "healthcare", location: "Remote", type: "Full-time", postedDate: "2024-04-24",
+                    summary: "Experienced Medical Biller and Coder to accurately assign codes and process insurance claims.",
+                    description: "Review medical records, assign appropriate ICD-10, CPT, and HCPCS codes, and manage the billing cycle.",
+                    responsibilities: ["Medical coding (ICD-10, CPT)", "Claims submission & follow-up", "Payment posting", "Resolving billing issues"],
+                    qualifications: ["CPC, CCS, or equivalent certification", "Proficiency in medical terminology", "Experience with EMR/EHR systems"]
+                }
+            ];
+
+            const jobListingsContainer = $('#jobListingsContainer');
+            const paginationContainer = $('#paginationContainer');
+            const noJobsMessage = $('#noJobsMessage');
+            const jobsPerPage = 9; // Changed to 9
+            let currentPage = 1;
+            let currentFilteredJobs = [];
+
+            function displayJobs(jobsToDisplay, page) {
+                jobListingsContainer.empty();
+                page = page || 1;
+                const startIndex = (page - 1) * jobsPerPage;
+                const endIndex = startIndex + jobsPerPage;
+                const paginatedJobs = jobsToDisplay.slice(startIndex, endIndex);
+
+                if (paginatedJobs.length === 0 && jobsToDisplay.length > 0) {
+                    noJobsMessage.text("No more jobs on this page. Try a previous page or adjust filters.").show();
+                } else if (jobsToDisplay.length === 0) {
+                     noJobsMessage.text("No jobs found matching your criteria. Please try adjusting your filters.").show();
+                }
+                else {
+                    noJobsMessage.hide();
+                    paginatedJobs.forEach(job => {
+                        const jobCard = `
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <div class="card job-card">
+                                    <div class="card-header job-card-header">
+                                        <h5>${job.title} <i class="fas fa-chevron-down expand-icon"></i></h5>
+                                        <p><i class="fas fa-map-marker-alt location-icon"></i> ${job.location} | <span class="badge badge-info">${job.type}</span></p>
+                                        <p class="text-muted small">Posted: ${job.postedDate}</p>
+                                    </div>
+                                    <div class="card-body job-card-summary">
+                                        <p>${job.summary}</p>
+                                    </div>
+                                    <div class="job-card-details">
+                                        <h6>Job Description</h6>
+                                        <p>${job.description}</p>
+                                        <h6>Responsibilities:</h6>
+                                        <ul>
+                                            ${job.responsibilities.map(resp => `<li>${resp}</li>`).join('')}
+                                        </ul>
+                                        <h6>Qualifications:</h6>
+                                        <ul>
+                                            ${job.qualifications.map(qual => `<li>${qual}</li>`).join('')}
+                                        </ul>
+                                        <a href="./quickapply.html?jobId=${job.id}&title=${encodeURIComponent(job.title)}" class="btn btn-primary btn-apply">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        jobListingsContainer.append(jobCard);
+                    });
+                }
+            }
+
+            function setupPagination(jobsToPaginate, page) {
+                paginationContainer.empty();
+                const pageCount = Math.ceil(jobsToPaginate.length / jobsPerPage);
+                currentPage = page;
+
+                if (pageCount <= 1) return;
+
+                paginationContainer.append(
+                    `<a href="#" class="page-link ${currentPage === 1 ? 'disabled' : ''}" data-page="${currentPage - 1}">« Prev</a>`
+                );
+
+                let startPage = Math.max(1, currentPage - 2);
+                let endPage = Math.min(pageCount, currentPage + 2);
+
+                if (currentPage <= 3) {
+                    endPage = Math.min(pageCount, 5);
+                }
+                if (currentPage > pageCount - 3) {
+                    startPage = Math.max(1, pageCount - 4);
+                }
+
+                if (startPage > 1) {
+                    paginationContainer.append(`<a href="#" class="page-link" data-page="1">1</a>`);
+                    if (startPage > 2) {
+                         paginationContainer.append(`<span class="page-link disabled">...</span>`);
+                    }
+                }
+
+                for (let i = startPage; i <= endPage; i++) {
+                    paginationContainer.append(
+                        `<a href="#" class="page-link ${i === currentPage ? 'active' : ''}" data-page="${i}">${i}</a>`
+                    );
+                }
+
+                 if (endPage < pageCount) {
+                    if (endPage < pageCount - 1) {
+                        paginationContainer.append(`<span class="page-link disabled">...</span>`);
+                    }
+                    paginationContainer.append(`<a href="#" class="page-link" data-page="${pageCount}">${pageCount}</a>`);
+                }
+
+                paginationContainer.append(
+                    `<a href="#" class="page-link ${currentPage === pageCount ? 'disabled' : ''}" data-page="${currentPage + 1}">Next »</a>`
+                );
+            }
+
+            function filterAndPaginateJobs() {
+                const category = $('#categoryFilter').val();
+                const location = $('#locationFilter').val().toLowerCase();
+                const keyword = $('#keywordSearch').val().toLowerCase();
+                const dateSort = $('#dateSortFilter').val();
+
+                currentFilteredJobs = [...allJobs]; // Create a copy to sort
+
+                if (dateSort === 'newest') {
+                    currentFilteredJobs.sort((a, b) => new Date(b.postedDate) - new Date(a.postedDate));
+                } else if (dateSort === 'oldest') {
+                    currentFilteredJobs.sort((a, b) => new Date(a.postedDate) - new Date(b.postedDate));
+                }
+
+                if (category !== 'all') {
+                    currentFilteredJobs = currentFilteredJobs.filter(job => job.category === category);
+                }
+                if (location) {
+                    currentFilteredJobs = currentFilteredJobs.filter(job => job.location.toLowerCase().includes(location));
+                }
+                if (keyword) {
+                    currentFilteredJobs = currentFilteredJobs.filter(job =>
+                        job.title.toLowerCase().includes(keyword) ||
+                        job.summary.toLowerCase().includes(keyword) ||
+                        job.description.toLowerCase().includes(keyword) ||
+                        (job.category && job.category.toLowerCase().includes(keyword))
+                    );
+                }
+                currentPage = 1;
+                displayJobs(currentFilteredJobs, currentPage);
+                setupPagination(currentFilteredJobs, currentPage);
+            }
+
+            $('#categoryFilter, #locationFilter, #keywordSearch, #dateSortFilter').on('change keyup', filterAndPaginateJobs);
+
+
+            jobListingsContainer.on('click', '.job-card-header', function() {
+                const details = $(this).siblings('.job-card-details');
+                details.slideToggle();
+                $(this).toggleClass('expanded');
+            });
+
+            paginationContainer.on('click', 'a.page-link:not(.disabled):not(.active)', function(e) {
+                e.preventDefault();
+                currentPage = parseInt($(this).data('page'));
+                displayJobs(currentFilteredJobs, currentPage);
+                setupPagination(currentFilteredJobs, currentPage);
+                $('html, body').animate({ scrollTop: $('#jobListingsContainer').offset().top - 100 }, 'smooth');
+            });
+
+            filterAndPaginateJobs();
+        });
+    </script>
+</body>
+</html>

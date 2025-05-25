@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Our Blog - 50 Stars Staffing</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./50 star staffing logo.png">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Staffing Blog, Education Insights, IT Career Advice, Healthcare Trends" name="keywords">
+    <meta content="Read the latest articles and insights from 50 Stars Staffing on careers, industry trends, and professional development in education, IT, and healthcare." name="description">
+
+    <link href="./50 star staffing logo.png" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+      .page-header {
+          background: var(--primary);
+      }
+      .page-header h3 {
+          font-family: 'Playfair Display', serif;
+      }
+      .card.blog-card {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+      }
+      .card.blog-card .card-img-top {
+          height: 200px;
+          object-fit: cover;
+          width: 100%;
+          display: block;
+      }
+      .card.blog-card .card-body {
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+      }
+       .card.blog-card .card-body p {
+          flex-grow: 1;
+          margin-bottom: 1rem;
+      }
+      .card.blog-card .btn-primary {
+          margin-top: auto;
+      }
+      .pagination .page-link {
+        color: var(--primary);
+        cursor: pointer;
+      }
+      .pagination .page-item.active .page-link {
+        background-color: var(--primary);
+        border-color: var(--primary);
+        color: white;
+      }
+      .pagination .page-item.disabled .page-link {
+        color: #6c757d;
+        pointer-events: none;
+      }
+       .pagination .page-item:not(.active) .page-link:hover {
+        background-color: #e9ecef;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-light position-relative shadow">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+            <a href="index.html" class="navbar-brand">
+                <img
+                    alt="50 Stars Staffing Logo"
+                    src="./50 star staffing logo.png"
+                    class="navbar-image1"
+                    style="width: 300px; height: auto;"
+                  />
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav font-weight-bold mx-auto py-0">
+                    <a href="./index.html" class="nav-item nav-link">Home</a>
+                    <a href="./findjobs.html" class="nav-item nav-link">Find Jobs</a>
+                    <a href="./jobcategories.html" class="nav-item nav-link">Job Categories</a>
+                    <a href="./schoolDistricts.html" class="nav-item nav-link">School/Districts</a>
+                    <a href="./about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Blog</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="blog.html" class="dropdown-item active">Blog Grid</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <a href="./quickapply.html" class="btn btn-primary px-4">Quick Apply</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid page-header mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+            <h3 class="display-3 font-weight-bold text-white">Our Blog</h3>
+            <div class="d-inline-flex text-white">
+                <p class="m-0"><a class="text-white" href="index.html">Home</a></p>
+                <p class="m-0 px-2">/</p>
+                <p class="m-0">Our Blog</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <p class="section-title px-5"><span class="px-2">Latest From Our Blog</span></p>
+                <h1 class="mb-4">Articles & Insights</h1>
+            </div>
+            <div class="row pb-3" id="blogGridContainer">
+                </div>
+            <div class="col-md-12 mb-4">
+                <nav aria-label="Page navigation">
+                  <ul class="pagination justify-content-center mb-0" id="blogPagination">
+                  </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <a href="index.html" class="navbar-brand">
+                        <img
+                            alt="50 Stars Staffing Logo"
+                            src="./50 star staffing logo.png"
+                            style="width: 100%; max-width:350px; height: auto; margin-bottom: 20px;"
+                        />
+                    </a>
+                    <p class="small">
+                        Subscribe to our newsletter for the latest updates on new
+                        features and product releases.
+                    </p>
+                    <form action="#" class="mt-3">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control border-0" placeholder="Enter your email">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="small mt-3">
+                        Connect with us on social media for updates and more.
+                    </p>
+                     <div class="d-flex justify-content-start mt-4">
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-5">
+                    <h3 class="text-primary mb-4">Professionals</h3>
+                    <div class="d-flex flex-column justify-content-start small">
+                        <a class="text-white mb-2" href="./quickapply.html"><i class="fa fa-angle-right mr-2"></i>Apply for a Job</a>
+                        <a class="text-white mb-2" href="./findjobs.html"><i class="fa fa-angle-right mr-2"></i>Browse Opportunities</a>
+                        <a class="text-white mb-2" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        <a class="text-white mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>FAQs</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h3 class="text-primary mb-4">Legal & Info</h3>
+                     <div class="d-flex flex-column justify-content-start small">
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms and Conditions</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Cookie Policy</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Social Media</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Feedback</a>
+                    </div>
+                </div>
+                 <div class="col-lg-3 col-md-6 mb-5">
+                    <h3 class="text-primary mb-4">Get In Touch</h3>
+                    <div class="d-flex mb-2">
+                        <h4 class="fa fa-map-marker-alt text-primary mt-1"></h4>
+                        <div class="pl-3 small">
+                            <h5 class="text-white">Address</h5>
+                            <p>5902 Bermuda Dunes Dr,<br>Houston TX, 77069</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <h4 class="fa fa-envelope text-primary mt-1"></h4>
+                        <div class="pl-3 small">
+                            <h5 class="text-white">Email</h5>
+                            <p>info@50starsstaffing.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <h4 class="fa fa-phone-alt text-primary mt-1"></h4>
+                        <div class="pl-3 small">
+                            <h5 class="text-white">Phone</h5>
+                            <p>+1-832-271-6498</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="border-top: 1px solid rgba(255, 255, 255, .1); padding-top: 30px;" class="mt-4">
+                <div class="row">
+                    <div class="col-md-8 text-center text-md-left mb-3 mb-md-0">
+                        <p class="m-0 text-white-50 small">
+                            © <a class="text-primary font-weight-bold" href="#">50 Stars Staffing</a>. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center text-md-right">
+                        <a class="text-white-50 small mr-3" href="#">/privacy</a>
+                        <a class="text-white-50 small mr-3" href="#">/terms</a>
+                        <a class="text-white-50 small" href="#">/cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            const allBlogPosts = [
+                {
+                    title: "The Evolving Role of Technology in Modern Classrooms",
+                    imgSrc: "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZWR1Y2F0aW9uJTIwdGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+                    altText: "Technology in classroom",
+                    author: "Admin",
+                    category: "EdTech",
+                    comments: 18,
+                    summary: "Exploring how new technologies are shaping teaching methodologies and student engagement. From interactive whiteboards to AI tutors, the future of education is here...",
+                    link: "single-edtech.html"
+                },
+                {
+                    title: "Understanding the Impact of Special Education Professionals",
+                    imgSrc: "https://images.unsplash.com/photo-1608889613099-9a854979473a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3BlY2lhbCUyMGVkdWNhdGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+                    altText: "Special education professional with student",
+                    author: "Dr. Allen",
+                    category: "SPED",
+                    comments: 25,
+                    summary: "A look into the critical contributions of SPED teachers, therapists, and paraprofessionals in creating inclusive and supportive learning environments for all students...",
+                    link: "single-sped.html"
+                },
+                {
+                    title: "Navigating Your Career as an Educator: Tips for Success",
+                    imgSrc: "https://images.unsplash.com/photo-1542744095-291d1f67b221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2FyZWVyJTIwYWR2aWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+                    altText: "Teacher guiding students",
+                    author: "C. Tacher",
+                    category: "Career Advice",
+                    comments: 12,
+                    summary: "Guidance for new and experienced educators on professional development, finding the right school fit, and making a lasting impact in the field of education...",
+                    link: "single-career.html"
+                },
+                {
+                    title: "Top In-Demand Skills for IT Professionals in 2024",
+                    imgSrc: "https://images.unsplash.com/photo-1522071820081-009f0129c7da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8SVQlMjBza2lsbHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+                    altText: "IT professionals collaborating",
+                    author: "Tech Weekly",
+                    category: "IT Trends",
+                    comments: 31,
+                    summary: "An overview of the most sought-after skills in the IT industry, from cloud computing to AI and cybersecurity, helping you stay ahead in your tech career...",
+                    link: "single-it-skills.html"
+                },
+                {
+                    title: "The Future of Healthcare Staffing: Adapting to New Challenges",
+                    imgSrc: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aGVhbHRoY2FyZSUyMHByb2Zlc3Npb25hbHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60",
+                    altText: "Healthcare professionals in a hospital setting",
+                    author: "Health Journal",
+                    category: "Healthcare",
+                    comments: 22,
+                    summary: "Discussing the evolving needs in healthcare staffing, the role of technology, and strategies for attracting and retaining top medical talent...",
+                    link: "single-healthcare-staffing.html"
+                },
+                {
+                    title: "Ace Your Next Interview: Tips from Our Recruiters",
+                    imgSrc: "https://images.unsplash.com/photo-1573497491208-6b1acb260507?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8am9iJTIwaW50ZXJ2aWV3fGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+                    altText: "Person preparing for an interview",
+                    author: "50 Stars Team",
+                    category: "Job Search",
+                    comments: 45,
+                    summary: "Insider tips and common pitfalls to avoid, helping you prepare effectively and make a great impression in your next job interview, no matter the industry...",
+                    link: "single-interview-tips.html"
+                },
+                 {
+                    title: "Integrating AI in K-12 Education: Opportunities & Ethics",
+                    imgSrc: "https://images.unsplash.com/photo-1677756120463-a01abd1850f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QUklMjBpbiUyMGVkdWNhdGlvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+                    altText: "AI and Education",
+                    author: "Ed Futures",
+                    category: "EdTech",
+                    comments: 29,
+                    summary: "Exploring the potential of artificial intelligence to personalize learning and the ethical considerations that come with its implementation in schools...",
+                    link: "single-ai-k12.html"
+                },
+                {
+                    title: "The Importance of Soft Skills in Tech Recruitment",
+                    imgSrc: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c29mdCUyMHNraWxsc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+                    altText: "Team collaboration with soft skills",
+                    author: "HR Insights",
+                    category: "IT Trends",
+                    comments: 15,
+                    summary: "Beyond technical prowess: why communication, teamwork, and problem-solving are increasingly crucial for IT professionals and how recruiters assess them...",
+                    link: "single-it-softskills.html"
+                },
+                {
+                    title: "Wellness Programs for Healthcare Professionals: Preventing Burnout",
+                    imgSrc: "https://images.unsplash.com/photo-1584515933487-759821d291fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aGVhbHRoY2FyZSUyMHdlbGxuZXNzfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
+                    altText: "Healthcare professional taking a break",
+                    author: "Wellbeing Today",
+                    category: "Healthcare",
+                    comments: 33,
+                    summary: "Strategies and best practices for implementing effective wellness programs to support the mental and physical health of hardworking healthcare staff...",
+                    link: "single-healthcare-wellness.html"
+                }
+            ];
+
+            const postsPerPage = 6;
+            let currentPage = 1;
+            const blogGridContainer = $('#blogGridContainer');
+            const blogPagination = $('#blogPagination');
+
+            function displayBlogPosts(page) {
+                blogGridContainer.empty();
+                page = page || 1;
+                const startIndex = (page - 1) * postsPerPage;
+                const endIndex = startIndex + postsPerPage;
+                const paginatedPosts = allBlogPosts.slice(startIndex, endIndex);
+
+                paginatedPosts.forEach(post => {
+                    const postCard = `
+                        <div class="col-lg-4 mb-4">
+                            <div class="card blog-card border-0 shadow-sm mb-2">
+                                <img class="card-img-top mb-2" src="${post.imgSrc}" alt="${post.altText}">
+                                <div class="card-body bg-light text-center p-4 d-flex flex-column">
+                                    <h4 class="">${post.title}</h4>
+                                    <div class="d-flex justify-content-center mb-3">
+                                        <small class="mr-3"><i class="fa fa-user text-primary"></i> ${post.author}</small>
+                                        <small class="mr-3"><i class="fa fa-folder text-primary"></i> ${post.category}</small>
+                                        <small class="mr-3"><i class="fa fa-comments text-primary"></i> ${post.comments}</small>
+                                    </div>
+                                    <p class="flex-grow-1">${post.summary}</p>
+                                    <a href="${post.link}" class="btn btn-primary px-4 mx-auto my-2 mt-auto">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    blogGridContainer.append(postCard);
+                });
+            }
+
+            function setupBlogPagination() {
+                blogPagination.empty();
+                const pageCount = Math.ceil(allBlogPosts.length / postsPerPage);
+
+                if (pageCount <= 1) return;
+
+                blogPagination.append(
+                    `<li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
+                        <a class="page-link" href="#" data-page="${currentPage - 1}" aria-label="Previous">
+                            <span aria-hidden="true">«</span><span class="sr-only">Previous</span>
+                        </a>
+                    </li>`
+                );
+
+                for (let i = 1; i <= pageCount; i++) {
+                    blogPagination.append(
+                        `<li class="page-item ${i === currentPage ? 'active' : ''}">
+                            <a class="page-link" href="#" data-page="${i}">${i}</a>
+                        </li>`
+                    );
+                }
+
+                blogPagination.append(
+                    `<li class="page-item ${currentPage === pageCount ? 'disabled' : ''}">
+                        <a class="page-link" href="#" data-page="${currentPage + 1}" aria-label="Next">
+                            <span aria-hidden="true">»</span><span class="sr-only">Next</span>
+                        </a>
+                    </li>`
+                );
+            }
+
+            blogPagination.on('click', 'a.page-link', function(e) {
+                e.preventDefault();
+                if ($(this).parent().hasClass('disabled') || $(this).parent().hasClass('active')) {
+                    return;
+                }
+                currentPage = parseInt($(this).data('page'));
+                displayBlogPosts(currentPage);
+                setupBlogPagination();
+                $('html, body').animate({ scrollTop: $('#blogGridContainer').offset().top - 100 }, 'smooth');
+            });
+
+            displayBlogPosts(currentPage);
+            setupBlogPagination();
+        });
+    </script>
+</body>
+</html>

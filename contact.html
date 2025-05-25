@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Job Categories - 50 Stars Staffing</title>
+    <title>Contact Us - 50 Stars Staffing</title>
     <link rel="shortcut icon" type="image/x-icon" href="./50 star staffing logo.png">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Job Categories, Education Jobs, IT Careers, Healthcare Positions, Staffing Specializations" name="keywords">
-    <meta content="Explore diverse job categories at 50 Stars Staffing, including opportunities in Education, Information Technology, and Healthcare." name="description">
+    <meta content="Contact 50 Stars Staffing, Staffing Agency Contact, Education Staffing, IT Staffing, Healthcare Staffing" name="keywords">
+    <meta content="Get in touch with 50 Stars Staffing for your professional staffing needs or career opportunities in education, IT, and healthcare." name="description">
 
     <link href="./50 star staffing logo.png" rel="icon">
 
@@ -28,65 +28,44 @@
       .page-header h3 {
           font-family: 'Playfair Display', serif;
       }
-
-      .category-section {
-          padding: 40px 0;
-          border-bottom: 1px solid #eee;
+      .contact-info .d-flex {
+          margin-bottom: 1.5rem;
       }
-      .category-section:last-child {
-          border-bottom: none;
+      .contact-info i.fa, .contact-info i.far {
+          width: 45px;
+          height: 45px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          background-color: var(--primary);
+          color: var(--secondary); /* Using KidKinder's secondary as icon text color on primary bg */
+          border-radius: 50%;
+          flex-shrink: 0; /* Prevent icon from shrinking */
       }
-      .category-section h2 {
-          font-family: 'Playfair Display', serif;
-          color: var(--secondary); /* KidKinder secondary color */
-          margin-bottom: 15px;
-          font-size: 2.5rem;
-      }
-       .category-section h2 i {
-          margin-right: 15px;
-          color: var(--primary);
-      }
-      .category-section .lead {
-          font-size: 1.1rem;
-          color: #555;
-          margin-bottom: 30px;
-      }
-      .category-section .featured-role-card {
-          background-color: #fff;
-          border: 1px solid #e0e0e0;
-          border-radius: 8px;
-          padding: 20px;
-          margin-bottom: 20px;
-          box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-          height: 100%; /* For uniform height */
-          display: flex;
-          flex-direction: column;
-      }
-      .category-section .featured-role-card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      }
-      .category-section .featured-role-card h5 {
+      .contact-info .pl-3 h5 {
+          color: var(--secondary); /* Match title colors from other sections */
           font-family: 'Nunito', sans-serif;
           font-weight: 600;
+      }
+      .contact-info .pl-3 p {
+          margin-bottom: 0.25rem;
+          color: #555;
+      }
+      .contact-info .pl-3 p a {
+          color: #454545;
+          text-decoration: none;
+      }
+      .contact-info .pl-3 p a:hover {
           color: var(--primary);
-          margin-bottom: 10px;
       }
-      .category-section .featured-role-card p {
-          font-size: 0.9rem;
-          color: #666;
-          flex-grow: 1; /* Make paragraph take space */
-          margin-bottom: 15px;
-      }
-      .category-section .btn-view-category {
+      .google-map-container-contact { /* Specific container for contact page map */
           margin-top: 30px;
       }
-      .intro-text {
-          font-size: 1.15rem;
-          line-height: 1.7;
-          margin-bottom: 40px;
-          color: #454545;
+      .google-map-container-contact iframe {
+          border:0;
+          border-radius: 12px;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          width: 100%;
       }
     </style>
 </head>
@@ -109,7 +88,7 @@
                 <div class="navbar-nav font-weight-bold mx-auto py-0">
                     <a href="./index.html" class="nav-item nav-link">Home</a>
                     <a href="./findjobs.html" class="nav-item nav-link">Find Jobs</a>
-                    <a href="./jobcategories.html" class="nav-item nav-link active">Job Categories</a>
+                    <a href="./jobcategories.html" class="nav-item nav-link">Job Categories</a>
                     <a href="./schoolDistricts.html" class="nav-item nav-link">School/Districts</a>
                     <a href="./about.html" class="nav-item nav-link">About</a>
                     <div class="nav-item dropdown">
@@ -118,7 +97,7 @@
                             <a href="blog.html" class="dropdown-item">Blog Grid</a>
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    <a href="contact.html" class="nav-item nav-link active">Contact Us</a>
                 </div>
                 <a href="./quickapply.html" class="btn btn-primary px-4">Quick Apply</a>
             </div>
@@ -127,132 +106,85 @@
 
     <div class="container-fluid page-header mb-5">
         <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-            <h3 class="display-3 font-weight-bold text-white">Job Categories</h3>
+            <h3 class="display-3 font-weight-bold text-white">Contact Us</h3>
             <div class="d-inline-flex text-white">
                 <p class="m-0"><a class="text-white" href="index.html">Home</a></p>
                 <p class="m-0 px-2">/</p>
-                <p class="m-0">Job Categories</p>
+                <p class="m-0">Contact Us</p>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid py-5">
+    <div class="container-fluid pt-5">
         <div class="container">
-            <div class="text-center mb-5">
-                <p class="section-title pr-5"><span class="pr-2">Our Specializations</span></p>
-                <h1 class="mb-4">Explore Opportunities by Industry</h1>
-                <p class="intro-text">
-                    At 50 Stars Staffing, we specialize in connecting talented professionals with rewarding careers across diverse industries.
-                    Whether you're seeking a role in education, aiming to advance your tech career, or looking to make a difference in healthcare,
-                    we have a wide range of opportunities to match your skills and aspirations.
-                </p>
+            <div class="text-center pb-2">
+                <p class="section-title px-5"><span class="px-2">Get In Touch</span></p>
+                <h1 class="mb-4">Contact Us For Any Query or Partnership</h1>
             </div>
-
-            <!-- Education Category -->
-            <section class="category-section">
-                <div class="text-center">
-                    <h2><i class="fas fa-graduation-cap"></i>Education</h2>
-                    <p class="lead">
-                        Impacting futures, one classroom at a time. We partner with schools and educational institutions
-                        to find passionate educators, administrators, and support staff.
-                    </p>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-md-4">
-                        <div class="featured-role-card">
-                            <h5>Special Education (SPED) Teachers</h5>
-                            <p>Make a profound difference in the lives of students with diverse learning needs. Roles available for various specializations and grade levels.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="featured-role-card">
-                            <h5>Speech-Language Pathologists (SLPs)</h5>
-                            <p>Help students overcome communication challenges. School-based and clinical opportunities for certified SLPs.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="featured-role-card">
-                            <h5>School Counselors & Psychologists</h5>
-                            <p>Provide essential support for students' academic, social, and emotional well-being in K-12 settings.</p>
-                        </div>
+            <div class="row">
+                <div class="col-lg-7 mb-5">
+                    <div class="contact-form">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="control-group">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control" rows="6" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary py-2 px-4" type="submit" id="sendMessageButton">Send Message</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="text-center">
-                     <a href="findjobs.html?category=education" class="btn btn-primary btn-view-category py-2 px-4">View All Education Jobs</a>
-                </div>
-            </section>
-
-            <!-- IT Category -->
-            <section class="category-section">
-                <div class="text-center">
-                    <h2><i class="fas fa-laptop-code"></i>Information Technology</h2>
-                    <p class="lead">
-                        Driving innovation and digital transformation. We connect skilled IT professionals with dynamic companies
-                        seeking expertise in software development, cybersecurity, data science, and more.
-                    </p>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-md-4">
-                        <div class="featured-role-card">
-                            <h5>Software Engineers & Developers</h5>
-                            <p>Opportunities for frontend, backend, and full-stack developers across various technologies (Java, Python, JavaScript frameworks, etc.).</p>
+                <div class="col-lg-5 mb-5 contact-info">
+                    <p>We're here to assist you with your staffing needs or to help you find your next career opportunity. Reach out to us through any of the channels below, or use the contact form, and our team will get back to you promptly.</p>
+                    <div class="d-flex">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <div class="pl-3">
+                            <h5>Address</h5>
+                            <p>5902 Bermuda Dunes Dr, Houston TX, 77069</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="featured-role-card">
-                            <h5>Cybersecurity Analysts</h5>
-                            <p>Protect valuable data and systems. Roles include security operations, threat intelligence, and compliance.</p>
+                    <div class="d-flex">
+                        <i class="fa fa-envelope"></i>
+                        <div class="pl-3">
+                            <h5>Email</h5>
+                            <p><a href="mailto:info@50starsstaffing.com">info@50starsstaffing.com</a></p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="featured-role-card">
-                            <h5>Cloud & DevOps Engineers</h5>
-                            <p>Architect, build, and manage scalable cloud infrastructure and CI/CD pipelines on platforms like AWS, Azure, and GCP.</p>
+                    <div class="d-flex">
+                        <i class="fa fa-phone-alt"></i>
+                        <div class="pl-3">
+                            <h5>Phone</h5>
+                            <p><a href="tel:+18322716498">+1-832-271-6498</a></p>
                         </div>
                     </div>
-                </div>
-                 <div class="text-center">
-                    <a href="findjobs.html?category=it" class="btn btn-info btn-view-category py-2 px-4">View All IT Jobs</a>
-                </div>
-            </section>
-
-            <!-- Healthcare Category -->
-            <section class="category-section">
-                <div class="text-center">
-                    <h2><i class="fas fa-heartbeat"></i>Healthcare</h2>
-                    <p class="lead">
-                        Providing compassionate care and advancing medical excellence. We place dedicated healthcare professionals
-                        in hospitals, clinics, and various healthcare settings.
-                    </p>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-md-4">
-                        <div class="featured-role-card">
-                            <h5>Registered Nurses (RNs)</h5>
-                            <p>Critical roles across various specialties including ICU, Med/Surg, ER, and more, in leading healthcare facilities.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="featured-role-card">
-                            <h5>Allied Health Professionals</h5>
-                            <p>Opportunities for Physical Therapists, Occupational Therapists, Radiologic Technologists, and other vital allied health roles.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="featured-role-card">
-                            <h5>Medical Assistants & Technicians</h5>
-                            <p>Essential support roles in patient care, diagnostics, and clinical operations in diverse medical environments.</p>
-                        </div>
+                    <div class="google-map-container-contact">
+                         <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.000010601999!2d-95.49549038488601!3d29.77663398197909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c01e67829075%3A0x84897d2c247a8817!2s5902%20Bermuda%20Dunes%20Dr%2C%20Houston%2C%20TX%2077069%2C%20USA!5e0!3m2!1sen!2sin!4v1715000000001"
+                            height="250"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                         <!-- Note: The above iframe src is specific to "5902 Bermuda Dunes Dr". Update if your primary contact address is different. -->
                     </div>
                 </div>
-                 <div class="text-center">
-                    <a href="findjobs.html?category=healthcare" class="btn btn-success btn-view-category py-2 px-4">View All Healthcare Jobs</a>
-                </div>
-            </section>
-
+            </div>
         </div>
     </div>
-
 
     <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="container">
@@ -361,9 +293,9 @@
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
     <script src="js/main.js"></script>
-    <script>
-        // No page-specific carousels on jobcategories.html based on current structure
-    </script>
 </body>
 </html>
